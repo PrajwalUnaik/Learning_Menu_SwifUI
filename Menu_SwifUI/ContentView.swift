@@ -78,10 +78,10 @@ struct ContentView: View {
                         Button(action: {}, label: { Label("Settings", systemImage: "gear") })
                         Button(action: {}, label: { Label("Favorite", systemImage: "star") })
                     } preview: {
-                        Text("Make your pick").padding()
+                        Text("Make your pick").padding().tint(.red).fontDesign(.monospaced)
                     }
             }
-        }
+        }.fontDesign(.monospaced)
     }
 }
 
